@@ -66,6 +66,6 @@ https://discord.com/developers/applications
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 License.
 
 UPDATED ON 31th JAN 2025
