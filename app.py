@@ -22,14 +22,10 @@ async def ask(ctx, *, message=None):
         await ctx.send("```/l <text>``` TEXT NOT FOUND AFTER /l")
         return
 
-    response: ChatResponse = ollama_chat(model='mannix/llama3.1-8b-abliterated:latest', messages=[
+    response: ChatResponse = ollama_chat(model='<YOUR MODEL HERE>', messages=[. ##DONT FORGET TO REPLACE YOUR MODEL NAME HERE
         {
             'role': 'assistant',
-            'content': 'You are an assistant who answers to the questions concisely',
-        },
-        {
-            'role': 'assistant',
-            'content': 'YOU are an assistant who will talk in no more than 2000 words,You wil strictly talk PG, nothing NSFW'
+            'content': 'You are an assistant who answers to the questions concisely in 1000characters',
         },
         {
             'role': 'user',
