@@ -10,7 +10,9 @@ This is a Discord bot built using Python and the `discord.py` library. The bot c
 ### Step 1) Set up and download the Ollama and LLM of your choice. 
 https://ollama.com/ also to get a restrictions free experience.. you can run abliterated models.
 
-``` $ ollama run <your model> ```
+```sh 
+    $ ollama run <your model>
+```
 -- after setting up Ollama
 
 ### Step 1) Create the bot in discord developer portal, customize it, get TOKEN AND CLIENT ID and set the permissions up.
@@ -39,6 +41,13 @@ https://discord.com/developers/applications
     DISCORD_BOT_TOKEN='your_discord_bot_token'
     CLIENT_ID=your_client_id
     ```
+5. Before running the bot,
+    ```DO UPDATE <YOUR MODEL NAME> to your actual model``` which can be found using
+
+    ```sh
+   $ollama list
+    ```
+    and selecting and updating it in the code.
 5. Run the bot:
     ```sh
     python3 app.py
